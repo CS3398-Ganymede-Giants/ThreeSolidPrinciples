@@ -14,7 +14,7 @@ package threesolid;
 // Open/Close Principle (OCP) -- This class is open for extension, but
 //     closed for modification.
 // Interface Segregation (ISP) -- This class implements IEat and
-//     ISick for super workers, and any specifics that may be required
+//     ISick for temp workers, and any specifics that may be required
 //     beyond the generic interfaces.
 // Single Responsibility (SRP) -- This class is solely responsible for
 //     temp workers.
