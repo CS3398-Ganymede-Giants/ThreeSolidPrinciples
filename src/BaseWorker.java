@@ -18,7 +18,7 @@ public class BaseWorker {
 	
 	public void work() {
 		
-	    System.out.format("<Identifying message> ... \n"); 
+	    System.out.format("In BaseWorker work method ... \n"); 
 	}
 	
 }
