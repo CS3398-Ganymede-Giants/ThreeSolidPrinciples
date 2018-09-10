@@ -12,7 +12,7 @@ package threesolid;
 // and ISP (Interface segragtion principle)
 // OCP
 
-interface ISick {
+public interface ISick {
 
 	// provides an interface for sick
 	void sick();

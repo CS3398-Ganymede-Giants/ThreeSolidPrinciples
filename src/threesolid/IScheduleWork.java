@@ -12,7 +12,7 @@ package threesolid;
 // and ISP (Interface segragtion principle)
 // OCP
 
-interface IScheduleWork {
+public interface IScheduleWork {
 
 	// provides an interface for schedulework
 	void schedulework();

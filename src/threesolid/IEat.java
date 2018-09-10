@@ -12,7 +12,7 @@ package threesolid;
 // and ISP (Interface segragtion principle)
 // OCP
 
-interface IEat {
+public interface IEat {
 
 	// provides an interface for eat
 	void eat();

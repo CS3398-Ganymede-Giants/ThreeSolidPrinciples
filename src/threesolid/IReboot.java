@@ -12,7 +12,7 @@ package threesolid;
 // and ISP (Interface segragtion principle)
 // OCP
 
-interface IReboot {
+public interface IReboot {
 
 	// provides an interface for reboot
 	void reboot();

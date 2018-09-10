@@ -15,11 +15,8 @@ package threesolid;
 
 public class Manager {
 
-	// create a worker
-	Worker myWorker;
-
-	// make Worker do work
-	public void manage(Worker w) {
-		w.work();
+	// manage something
+	public void manage() {
+		System.out.format("Manager manage() ... \n");
 	}
 }

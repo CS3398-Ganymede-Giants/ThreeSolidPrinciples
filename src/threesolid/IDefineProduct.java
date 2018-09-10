@@ -12,7 +12,7 @@ package threesolid;
 // and ISP (Interface segragtion principle)
 // OCP
 
-interface IDefineProduct {
+public interface IDefineProduct {
 
 	// provides an interface for defineproduct
 	void defineproduct();
