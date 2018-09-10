@@ -14,7 +14,7 @@ package threesolid;
 
 public interface IReboot {
 
-	// provides an interface for reboot
-	void reboot();
+  // provides an interface for reboot
+  void reboot();
 
 }

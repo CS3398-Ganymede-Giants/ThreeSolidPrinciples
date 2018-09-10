@@ -14,7 +14,7 @@ package threesolid;
 
 public interface IDefineProduct {
 
-	// provides an interface for defineproduct
-	void defineproduct();
+  // provides an interface for defineproduct
+  void defineproduct();
 
 }

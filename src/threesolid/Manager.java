@@ -11,12 +11,12 @@ package threesolid;
 //    for Managers.
 // Not Used:
 // Interface Segregation (ISP) -- This class does not implement any interfaces
-// 	  directly.
+//     directly.
 
 public class Manager {
 
-	// manage something
-	public void manage() {
-		System.out.format("Manager manage() ... \n");
-	}
+  // manage something
+  public void manage() {
+    System.out.format("Manager manage() ... \n");
+  }
 }

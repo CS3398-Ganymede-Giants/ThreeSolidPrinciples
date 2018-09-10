@@ -7,7 +7,7 @@ package threesolid;
 //     public class BaseWorker
 // Implements:
 //     IEat eat()
-//		 ISick sick()
+//     ISick sick()
 //
 //
 // SOLID Principles:
@@ -21,21 +21,21 @@ package threesolid;
 
 public class SuperWorker extends BaseWorker implements IEat, ISick {
 
-	// Override BaseWorker work()
-	@Override
-	public void work() {
-		// work function for SuperWorker
-		System.out.format("SuperWorker work() ... \n");
-	}
+  // Override BaseWorker work()
+  @Override
+  public void work() {
+    // work function for SuperWorker
+    System.out.format("SuperWorker work() ... \n");
+  }
 
-	public void eat() {
-		// eat function for SuperWorker
-		System.out.format("SuperWorker eat() ... \n");
-	}
+  public void eat() {
+    // eat function for SuperWorker
+    System.out.format("SuperWorker eat() ... \n");
+  }
 
-	public void sick() {
-		// sick function for SuperWorker
-		System.out.format("SuperWorker sick() ... \n");
-	}
+  public void sick() {
+    // sick function for SuperWorker
+    System.out.format("SuperWorker sick() ... \n");
+  }
 
 }

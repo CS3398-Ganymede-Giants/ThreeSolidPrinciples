@@ -14,7 +14,7 @@ package threesolid;
 
 public interface IEat {
 
-	// provides an interface for eat
-	void eat();
+  // provides an interface for eat
+  void eat();
 
 }

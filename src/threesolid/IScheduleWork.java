@@ -14,7 +14,7 @@ package threesolid;
 
 public interface IScheduleWork {
 
-	// provides an interface for schedulework
-	void schedulework();
+  // provides an interface for schedulework
+  void schedulework();
 
 }
