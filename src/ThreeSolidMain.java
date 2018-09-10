@@ -61,9 +61,9 @@ public class ThreeSolidMain
       testTempWorker.work();
       testManager.manage();
       testProductManager.manage();
-      testProductManager.schedulework();
+      testProductManager.defineproduct();
       testProjectManager.manage();
-      testProjectManager.defineproduct();
+      testProjectManager.schedulework();
 
 
       try
