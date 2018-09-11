@@ -1,10 +1,10 @@
 # ThreeSolidPrinciples
 [![Build Status](https://travis-ci.com/CS3398-Ganymede-Giants/ThreeSolidPrinciples.svg?branch=robert-test)](https://travis-ci.com/CS3398-Ganymede-Giants/ThreeSolidPrinciples)
 
-* *Single responsibility principle*
-* *Open/closed principle*
+* **Single responsibility principle**
+* **Open/closed principle**
 * Liskov substitution principle
-* *Interface segregation principle*
+* **Interface segregation principle**
 * Dependency diversion principle  
 [https://en.wikipedia.org/wiki/SOLID](https://en.wikipedia.org/wiki/SOLID)
 
