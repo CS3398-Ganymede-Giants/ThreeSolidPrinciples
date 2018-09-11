@@ -1,5 +1,5 @@
 # ThreeSolidPrinciples
-[![Build Status](https://travis-ci.com/CS3398-Ganymede-Giants/ThreeSolidPrinciples.svg?branch=robert)](https://travis-ci.com/CS3398-Ganymede-Giants/ThreeSolidPrinciples)
+[![Build Status](https://travis-ci.com/CS3398-Ganymede-Giants/ThreeSolidPrinciples.svg?branch=development)](https://travis-ci.com/CS3398-Ganymede-Giants/ThreeSolidPrinciples)
 ## Ant Build Options
 `ant main` - Clean, build, and run  
 `ant clean-build` - Clean and build  
