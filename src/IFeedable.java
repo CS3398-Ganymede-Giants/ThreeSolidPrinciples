@@ -1,4 +1,4 @@
-// IFeedable.java 
+// IFeedable.java
 //
 // An Interface
 //
@@ -7,12 +7,12 @@
 //
 // Seperated work and eat
 // to comply with SRP (single responsibility principle)
-// and ISP (Interface segragtion principle) 
+// and ISP (Interface segragtion principle)
 // OCP
 
 package threesolid;
 
-interface IFeedable {
+public interface IFeedable {
 
-	public void eat();
+	void eat();
 }
