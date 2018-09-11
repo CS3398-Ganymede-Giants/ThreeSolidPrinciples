@@ -3,35 +3,36 @@ package threesolid;
 // SuperWorker.java
 // Provides:
 //     public class SuperWorker
-//     extraWork()
 // Extends:
-//     public class Worker
+//     public class BaseWorker
 // Implements:
-//     IWorkable work()
-//     IFeedable eat()
+//     IEat eat()
+//     ISick sick()
 //
 //
 // SOLID Principles:
 // Open/Close Principle (OCP) -- This class is open for extension, but
 //     closed for modification.
-// Interface Segregation (ISP) -- This class implements IWorkable and
-//     IFeedable for super workers, and any specifics that may be required
+// Interface Segregation (ISP) -- This class implements IEat and
+//     ISick for super workers, and any specifics that may be required
 //     beyond the generic interfaces.
 // Single Responsibility (SRP) -- This class is solely responsible for
 //     super workers.
 
-public class SuperWorker extends Worker implements IWorkable, IFeedable {
-	
-	public void work() {
-		// do something super 
-	}
-	
-	public void extraWork() {
-		// do something more
-	}
-	
-	public void eat() {
-		// do something
-	}
+public class SuperWorker extends BaseWorker implements IEat, ISick {
+
+  // Override BaseWorker work()
+  @Override
+  public void work() {
+    System.out.format("SuperWorker work() ... \n");
+  }
+
+  public void eat() {
+    System.out.format("SuperWorker eat() ... \n");
+  }
+
+  public void sick() {
+    System.out.format("SuperWorker sick() ... \n");
+  }
 
 }
