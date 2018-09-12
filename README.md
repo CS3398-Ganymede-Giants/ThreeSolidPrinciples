@@ -9,9 +9,27 @@
 [https://en.wikipedia.org/wiki/SOLID](https://en.wikipedia.org/wiki/SOLID)
 
 ### Ant Build Options
-`ant main` - Clean, build, and run  
-`ant clean-build` - Clean and build  
-`ant clean` - Clean  
-`ant compile` - Compile classes  
-`ant jar` - Build jar files  
-`ant run` - Run program  
+- Clean, build, and run
+```shell
+$ ant main
+```
+- Clean and build
+```shell
+$ ant clean-build
+```
+- Clean
+```shell
+$ ant clean
+```
+- Compile classes
+```shell
+$ ant compile
+```
+- Build jar files
+```shell
+$ ant jar
+```
+- Run program
+```shell
+$ ant run
+```
