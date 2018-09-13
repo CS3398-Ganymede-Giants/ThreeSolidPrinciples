@@ -28,4 +28,4 @@ Run program
 ```shell
 $ ant run
 ```
-<!-- testing Travis-CI notifications -->
+<!-- testing Travis-CI notifications testing -->
