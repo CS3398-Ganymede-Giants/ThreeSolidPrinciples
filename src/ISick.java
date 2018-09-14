@@ -7,6 +7,6 @@
 
 package threesolid;
 
-public interface ISick(){
+public interface ISick{
     void sick();
 }

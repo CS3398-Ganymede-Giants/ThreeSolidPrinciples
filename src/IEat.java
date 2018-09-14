@@ -7,6 +7,6 @@
 
 package threesolid;
 
-public interface IEat(){
+public interface IEat{
     void eat();
 }
