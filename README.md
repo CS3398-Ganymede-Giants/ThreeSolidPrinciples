@@ -1,5 +1,6 @@
 # ThreeSolidPrinciples
-[![Build Status](https://travis-ci.com/CS3398-Ganymede-Giants/ThreeSolidPrinciples.svg?branch=robert-test)](https://travis-ci.com/CS3398-Ganymede-Giants/ThreeSolidPrinciples)
+[![Build Status](https://travis-ci.com/CS3398-Ganymede-Giants/ThreeSolidPrinciples.svg?branch=development)](https://travis-ci.com/CS3398-Ganymede-Giants/ThreeSolidPrinciples)
+[![CodeFactor](https://www.codefactor.io/repository/github/cs3398-ganymede-giants/threesolidprinciples/badge/development)](https://www.codefactor.io/repository/github/cs3398-ganymede-giants/threesolidprinciples/overview/development)
 
 * Single responsibility principle
 * Open/closed principle
