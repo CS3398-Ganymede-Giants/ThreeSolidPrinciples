@@ -16,7 +16,7 @@ package threesolid;
 // Interface Segregation (ISP) -- This class implements defineproduct for
 //     ProductManager
 
-public class ProductManager extends Manager implements IDefineProduct {
+public class ProductManager extends Manager {
 
   public void defineproduct() {
     // defineproduct function for ProductManager

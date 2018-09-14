@@ -16,7 +16,7 @@ package threesolid;
 // Interface Segregation (ISP) -- This class implements schedulework for
 //     ProjectManager
 
-public class ProjectManager extends Manager implements IScheduleWork {
+public class ProjectManager extends Manager {
 
   public void schedulework() {
     // schedulework function for ProjectManager

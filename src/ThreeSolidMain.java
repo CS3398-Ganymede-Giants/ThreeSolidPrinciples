@@ -23,7 +23,7 @@ Not Used:
 
 public class ThreeSolidMain
 {
-
+   public static BaseWorker testBaseWorker = new BaseWorker();
    public static Manager testManager = new Manager();
    public static ProjectManager testProjectManager = new ProjectManager();
    public static ProductManager testProductManager = new ProductManager();
@@ -48,20 +48,29 @@ public class ThreeSolidMain
       }
 
       // Test all functions
+      System.out.format("BaseWorker:\n");
+      testBaseWorker.work();
+      System.out.format("\nWorker:\n");
       testWorker.eat();
       testWorker.sick();
       testWorker.work();
+      System.out.format("\nRobot:\n");
       testRobot.reboot();
       testRobot.work();
+      System.out.format("\nSuperWorker:\n");
       testSuperWorker.eat();
       testSuperWorker.sick();
       testSuperWorker.work();
+      System.out.format("\nTestWorker:\n");
       testTempWorker.eat();
       testTempWorker.sick();
       testTempWorker.work();
+      System.out.format("\nManager:\n");
       testManager.manage();
+      System.out.format("\nProductManager:\n");
       testProductManager.manage();
       testProductManager.defineproduct();
+      System.out.format("\nProjectManager:\n");
       testProjectManager.manage();
       testProjectManager.schedulework();
 
