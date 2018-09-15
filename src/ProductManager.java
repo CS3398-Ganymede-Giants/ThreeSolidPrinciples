@@ -17,6 +17,11 @@
 
 public class ProductManager extends Manager {
 
+  @Override
+  public void manage() {
+    System.out.format("ProductManager manage() ...");
+  }
+
   public void defineproduct() {
     System.out.format("ProductManager defineproduct() ...");
   }
