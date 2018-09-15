@@ -5,16 +5,14 @@ package threesolid;
 //     public class ProjectManager
 // Extends:
 //     public class Manager
-// Implements:
-//     IScheduleWork schedulework()
 //
 // SOLID Principles:
 // Open/Close Principle (OCP) -- This class is open for extension, but
 //     closed for modification.
 // Single Responsibility (SRP) -- This class has a single responsibility
 //    for ProjectManagers.
-// Interface Segregation (ISP) -- This class implements schedulework for
-//     ProjectManager
+// Interface Segregation (ISP) -- This class does not implement any interfacces
+//    directly.
 
 public class ProjectManager extends Manager {
 

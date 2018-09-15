@@ -5,16 +5,14 @@ package threesolid;
 //     public class ProductManager
 // Extends:
 //     public class Manager
-// Implements:
-//     IDefineProduct defineproduct()
 //
 // SOLID Principles:
 // Open/Close Principle (OCP) -- This class is open for extension, but
 //     closed for modification.
 // Single Responsibility (SRP) -- This class has a single responsibility
 //    for ProductManagers.
-// Interface Segregation (ISP) -- This class implements defineproduct for
-//     ProductManager
+// Interface Segregation (ISP) -- This class does not implement any interfaces
+//    directly.
 
 public class ProductManager extends Manager {
 
