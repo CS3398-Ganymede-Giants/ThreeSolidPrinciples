@@ -1,3 +1,4 @@
+package threesolid;
 // ProjectManager.java
 //
 // A Subclass
