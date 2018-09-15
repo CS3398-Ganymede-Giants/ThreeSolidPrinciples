@@ -21,7 +21,8 @@
     <target name="run" depends="jar">
         <java jar="build/jar/ThreeSolidMain.jar" fork="true"/>
     </target>
-    
+
     <target name="main" depends="clean,run"/>
+    <target name="clean-build" depends="clean,jar"/>
 
 </project>
