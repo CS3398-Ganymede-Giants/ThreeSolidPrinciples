@@ -1,13 +1,19 @@
-//ISick.java
-//
-// An interface
-//
-//Declares sick() method
-//
-
 package threesolid;
 
-public interface ISick{
-    void sick();
-  }
+// ISick.java
+//
+// An Interface
+//
+// Provides:
+// void sick()
+//
+// Seperated eat, sick, and reboot interfaces
+// to comply with SRP (single responsibility principle)
+// and ISP (Interface segragtion principle)
+// OCP
+
+public interface ISick {
+
+  void sick();
+
 }
