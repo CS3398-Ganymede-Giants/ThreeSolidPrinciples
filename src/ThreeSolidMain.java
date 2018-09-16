@@ -3,7 +3,7 @@ package threesolid;
 import java.awt.*;        // Using AWT container and component classes
 import java.awt.event.*;  // Using AWT event classes and listener interfaces
 import java.io.*;
-import threesolid.*;      // Use threesolid
+
 
 /*
 ThreeSolidMain.java
@@ -22,17 +22,32 @@ Not Used:
    in this class.
 */
 
+/*
+███    ███  █████  ██ ███    ██
+████  ████ ██   ██ ██ ████   ██
+██ ████ ██ ███████ ██ ██ ██  ██
+██  ██  ██ ██   ██ ██ ██  ██ ██
+██      ██ ██   ██ ██ ██   ████
+*/
+
+
+
 public class ThreeSolidMain
 {
-   public static BaseWorker testBaseWorker = new BaseWorker();
-   public static Manager testManager = new Manager();
-   public static ProjectManager testProjectManager = new ProjectManager();
-   public static ProductManager testProductManager = new ProductManager();
-   public static Worker testWorker = new Worker();
-   public static SuperWorker testSuperWorker = new SuperWorker();
-   public static TempWorker testTempWorker = new TempWorker();
-   // threesolid.Robot conflicts with java.awt.Robot so it must be specified
-   public static threesolid.Robot testRobot = new threesolid.Robot();
+  
+    //Class Instantiations
+    //Worker
+    public static BaseWorker testBaseWorker = new BaseWorker();
+    public static Worker testWorker = new Worker();
+    public static SuperWorker testSuperWorker = new SuperWorker();
+    public static TempWorker testTempWorker = new TempWorker();
+    //Manager 
+    public static Manager testManager = new Manager();
+    public static ProjectManager testProjectManager = new ProjectManager();
+    public static ProductManager testProductManager = new ProductManager();
+    //Robot
+    // threesolid.Robot conflicts with java.awt.Robot so it must be specified
+    public static threesolid.Robot testRobot = new threesolid.Robot();
 
 
    // The entry main() method
@@ -48,29 +63,37 @@ public class ThreeSolidMain
          main_except.printStackTrace();
       }
 
-      // Test all functions
+      // Test all functions of class instances
+      //BaseWorker
       System.out.format("BaseWorker:\n");
       testBaseWorker.work();
+      //Worker
       System.out.format("\nWorker:\n");
       testWorker.eat();
       testWorker.sick();
       testWorker.work();
+      //Robot
       System.out.format("\nRobot:\n");
       testRobot.reboot();
       testRobot.work();
+      //SuperWorker
       System.out.format("\nSuperWorker:\n");
       testSuperWorker.eat();
       testSuperWorker.sick();
       testSuperWorker.work();
+      //TestWorker
       System.out.format("\nTestWorker:\n");
       testTempWorker.eat();
       testTempWorker.sick();
       testTempWorker.work();
+      //Manager
       System.out.format("\nManager:\n");
       testManager.manage();
+      //ProductManager
       System.out.format("\nProductManager:\n");
       testProductManager.manage();
       testProductManager.defineproduct();
+      //ProjectManager
       System.out.format("\nProjectManager:\n");
       testProjectManager.manage();
       testProjectManager.schedulework();
