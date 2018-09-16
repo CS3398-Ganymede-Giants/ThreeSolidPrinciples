@@ -15,6 +15,6 @@ package threesolid;
 public class Manager {
 
 		public void manage() {
-			System.out.format("\tManager manage() ...");
+			System.out.format("\tManager manage() ...\n");
 		}
 }
