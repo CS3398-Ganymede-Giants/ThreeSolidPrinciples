@@ -18,10 +18,10 @@ package threesolid;
 public class Worker extends BaseWorker implements IEat,ISick {
 
   public void eat() {
-    System.out.format("Worker eat() ... \n");
+    System.out.format("\tWorker eat() ... \n");
   }
   public void sick() {
-    System.out.format("Worker sick() ... \n");
+    System.out.format("\tWorker sick() ... \n");
   }
 
 }

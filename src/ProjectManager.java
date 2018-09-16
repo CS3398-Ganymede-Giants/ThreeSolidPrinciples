@@ -20,11 +20,11 @@ public class ProjectManager extends Manager {
 
   @Override
   public void manage() {
-    System.out.format("ProjectManager manage() ...\n");
+    System.out.format("\tProjectManager manage() ...\n");
   }
 
   public void schedulework() {
-    System.out.format("ProjectManager schedulework() ...\n");
+    System.out.format("\tProjectManager schedulework() ...\n");
   }
 
 }

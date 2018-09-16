@@ -20,7 +20,7 @@ package threesolid;
 public class Robot extends BaseWorker implements IReboot {
   
   public void reboot() {
-    System.out.format("Robot reboot() ... \n");
+    System.out.format("\tRobot reboot() ... \n");
   }
 
 }

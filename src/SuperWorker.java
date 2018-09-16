@@ -24,15 +24,15 @@ public class SuperWorker extends BaseWorker implements IEat, ISick {
   // Override BaseWorker work()
   @Override
   public void work() {
-    System.out.format("SuperWorker work() ... \n");
+    System.out.format("\tSuperWorker work() ... \n");
   }
 
   public void eat() {
-    System.out.format("SuperWorker eat() ... \n");
+    System.out.format("\tSuperWorker eat() ... \n");
   }
 
   public void sick() {
-    System.out.format("SuperWorker sick() ... \n");
+    System.out.format("\tSuperWorker sick() ... \n");
   }
 
 }
