@@ -1,20 +1,17 @@
-package threesolid;
-
-// IReboot.java
+//IReboot.java
 //
-// An Interface
+// An interface
 //
 // Provides:
-// void reboot()
+//reboot() method
 //
 // Seperated eat, sick, and reboot interfaces
 // to comply with SRP (single responsibility principle)
 // and ISP (Interface segragtion principle)
 // OCP
 
-public interface IReboot {
+package threesolid;
 
-  // provides an interface for reboot
-  void reboot();
-
+public interface IReboot{
+    boolean reboot();
 }

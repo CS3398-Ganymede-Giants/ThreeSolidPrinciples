@@ -4,7 +4,7 @@ package threesolid;
 // Provides:
 //     public class Robot
 // Extends:
-//     public class BaseWorker
+//     BaseWorker
 // Implements:
 //     IReboot reboot()
 //
@@ -17,12 +17,11 @@ package threesolid;
 // Single Responsibility (SRP) -- This class is solely responsible for
 //     robot workers.
 
-
 public class Robot extends BaseWorker implements IReboot {
 
-  public void reboot() {
-    // reboot robot
-    System.out.format("Robot reboot() ... \n");
+  public boolean reboot() {
+    System.out.format("\tRobot reboot() ... \n");
+    return true;
   }
 
 }

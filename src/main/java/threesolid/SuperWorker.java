@@ -23,19 +23,19 @@ public class SuperWorker extends BaseWorker implements IEat, ISick {
 
   // Override BaseWorker work()
   @Override
-  public void work() {
-    // work function for SuperWorker
-    System.out.format("SuperWorker work() ... \n");
+  public boolean work() {
+    System.out.format("\tSuperWorker work() ... \n");
+    return true;
   }
 
-  public void eat() {
-    // eat function for SuperWorker
-    System.out.format("SuperWorker eat() ... \n");
+  public boolean eat() {
+    System.out.format("\tSuperWorker eat() ... \n");
+    return true;
   }
 
-  public void sick() {
-    // sick function for SuperWorker
-    System.out.format("SuperWorker sick() ... \n");
+  public boolean sick() {
+    System.out.format("\tSuperWorker sick() ... \n");
+    return true;
   }
 
 }

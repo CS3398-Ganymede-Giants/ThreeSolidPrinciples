@@ -1,5 +1,4 @@
 package threesolid;
-
 // Manager.java
 // Provides:
 //     public class Manager
@@ -10,13 +9,13 @@ package threesolid;
 // Single Responsibility (SRP) -- This class has a single responsibility
 //    for Managers.
 // Not Used:
-// Interface Segregation (ISP) -- This class does not implement any interfaces
-//     directly.
+// Interface Segregation (ISP) -- This class doesn't implement any interfaces
+// 	  directly.
 
 public class Manager {
 
-  // manage something
-  public void manage() {
-    System.out.format("Manager manage() ... \n");
-  }
+		public boolean manage() {
+			System.out.format("\tManager manage() ...\n");
+      return true;
+		}
 }

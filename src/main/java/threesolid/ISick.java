@@ -14,7 +14,6 @@ package threesolid;
 
 public interface ISick {
 
-  // provides an interface for sick
-  void sick();
+ boolean sick();
 
 }
