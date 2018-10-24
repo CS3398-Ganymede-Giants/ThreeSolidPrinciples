@@ -19,12 +19,14 @@ package threesolid;
 public class ProductManager extends Manager {
 
   @Override
-  public void manage() {
+  public boolean manage() {
     System.out.format("\tProductManager manage() ...\n");
+    return true;
   }
 
-  public void defineproduct() {
+  public boolean defineproduct() {
     System.out.format("\tProductManager defineproduct() ...\n");
+    return true;
   }
 
 }

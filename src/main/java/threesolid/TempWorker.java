@@ -23,19 +23,22 @@ public class TempWorker extends BaseWorker implements IEat, ISick {
 
   // Override BaseWorker work()
   @Override
-  public void work() {
+  public boolean work() {
     // work function for TempWorker
     System.out.format("\tTempWorker work() ... \n");
+    return true;
   }
 
-  public void eat() {
+  public boolean eat() {
     // eat function for TempWorker
     System.out.format("\tTempWorker eat() ... \n");
+    return true;
   }
 
-  public void sick() {
+  public boolean sick() {
     // sick function for TempWorker
     System.out.format("\tTempWorker sick() ... \n");
+    return true;
   }
 
 }

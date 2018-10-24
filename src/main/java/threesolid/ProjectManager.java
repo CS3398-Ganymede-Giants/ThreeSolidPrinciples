@@ -19,12 +19,14 @@ package threesolid;
 public class ProjectManager extends Manager {
 
   @Override
-  public void manage() {
+  public boolean manage() {
     System.out.format("\tProjectManager manage() ...\n");
+    return true;
   }
 
-  public void schedulework() {
+  public boolean schedulework() {
     System.out.format("\tProjectManager schedulework() ...\n");
+    return true;
   }
 
 }

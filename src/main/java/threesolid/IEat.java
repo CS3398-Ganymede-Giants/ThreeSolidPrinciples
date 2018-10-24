@@ -1,19 +1,19 @@
 package threesolid;
 
-// ISick.java
+// IEat.java
 //
 // An Interface
 //
 // Provides:
-// void sick()
+// void eat()
 //
 // Seperated eat, sick, and reboot interfaces
 // to comply with SRP (single responsibility principle)
 // and ISP (Interface segragtion principle)
 // OCP
 
-public interface ISick {
+public interface IEat {
 
- void sick();
+  boolean eat();
 
 }
