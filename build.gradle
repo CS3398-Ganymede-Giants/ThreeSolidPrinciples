@@ -101,5 +101,5 @@ test {
 // end::dependencies[]
 
 wrapper {
-	gradleVersion = '5.0'
+	gradleVersion = '4.10.2'
 }
