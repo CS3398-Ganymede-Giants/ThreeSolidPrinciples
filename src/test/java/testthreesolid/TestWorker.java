@@ -1,32 +1,35 @@
 package threesolid;
 
-import org.junit.jupiter.api.BeforeAll;
-
-
 import static org.junit.jupiter.api.Assertions.*;
-import org.junit.jupiter.api.DisplayName;
+
+
+import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.RepeatedTest;
+import org.junit.jupiter.api.TestInstance;
+import org.junit.jupiter.api.extension.ExtendWith;
+
 
 
 public class TestWorker {
 
    private  Worker w = new Worker();
-
+	
    @Test
-   @DisplayName("Worker Test")
-   public void testWorker()
+   public void testWorkerWithNoName()
    {
-      assertEquals(w.eat(), true);
-      assertEquals(w.sick(), true);
+      assertEquals(w.getName(),"");
+      assertEquals(w.work(),"I'm working already!");
    }
 
-   // @Test
-   // @DisplayName("With Name Test")
-   // public void testWorkerWithName()
-   // {
-   //    w.setName("Corvus Glaive");
-   //    assertEquals(w.getName(),"Corvus Glaive");
-   //    assertEquals(w.work(),"Corvus Glaive is working very hard!");
-   // }
+   @Test
+   public void testWorkerWithName()
+   {
+      w.setName("Corvus Glaive");
+      assertEquals(w.getName(),"Corvus Glaive");
+      assertEquals(w.work(),"Corvus Glaive is working very hard!");
+   }
 
 }
