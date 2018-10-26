@@ -7,9 +7,9 @@
  * user guide available at https://docs.gradle.org/2.8/userguide/tutorial_java_projects.html
  */
 
-/*
 // Apply the java plugin to add support for Java
 apply plugin: 'java'
+<<<<<<< HEAD
 
 // In this section you declare where to find the dependencies of your project
 repositories {
@@ -32,6 +32,8 @@ dependencies {
 */
 
 <<<<<<< HEAD
+=======
+>>>>>>> 952e6e9b00a96fcf24ded91e7c72b206417ceb9c
 // The Eclipse plugins generate files used by Eclipse,  making it possible to import project into Eclipse.
 //apply plugin: 'eclipse'
 //The Application plugin facilitates creating an executable JVM application.
@@ -56,6 +58,7 @@ sourceSets {
     }
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
 //
 //      Change this assignment to reflect your own project
 //      mainClassName = 'package.mainClassName'
@@ -65,6 +68,9 @@ sourceSets {
 
 // mainClassName = 'package.mainClassName'
 >>>>>>> master
+=======
+
+>>>>>>> 952e6e9b00a96fcf24ded91e7c72b206417ceb9c
 mainClassName = 'threesolid.ThreeSolidMain'
 
 // tag::repositories[]
@@ -103,26 +109,30 @@ targetCompatibility = 1.7
 // junit is to run the TestGreeter.java and others
 dependencies {
     compile "joda-time:joda-time:2.2"
-    compile "org.junit.jupiter:junit-jupiter-api:5.3.0-M1"
+    compile "org.junit.jupiter:junit-jupiter-api:5.3.1"
  //   testCompile 'junit:junit:4.12'
-    testCompile "org.junit.jupiter:junit-jupiter-api:5.3.0-M1"
+    testCompile "org.junit.jupiter:junit-jupiter-api:5.3.1"
 
     testImplementation(
-            'org.junit.jupiter:junit-jupiter-api:5.3.0-M1'
+            'org.junit.jupiter:junit-jupiter-api:5.3.1'
     )
     testRuntimeOnly(
-            'org.junit.jupiter:junit-jupiter-engine:5.3.0-M1',
-            'org.junit.vintage:junit-vintage-engine:5.3.0-M1'
+            'org.junit.jupiter:junit-jupiter-engine:5.3.1',
+            'org.junit.vintage:junit-vintage-engine:5.3.1'
     )
 }
 
 test {
-    useJUnitPlatform()
+    // useJUnitPlatform()
 }
 // end::dependencies[]
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 wrapper {
+=======
+task wrapper(type: Wrapper) {
+>>>>>>> 952e6e9b00a96fcf24ded91e7c72b206417ceb9c
 	gradleVersion = '4.10.2'
 }
 =======
