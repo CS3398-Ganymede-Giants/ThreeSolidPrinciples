@@ -16,7 +16,6 @@ public class TestBaseWorker {
 	
 	   private  BaseWorker bw = new BaseWorker();
    @Test	
-   @DisplayName("BaseWorker Test")
 
 	public void testBaseWorkerwork() {
 	    assertEquals(bw.work(),"\tIn BaseWorker work method ... \n");
