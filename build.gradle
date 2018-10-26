@@ -31,6 +31,8 @@ dependencies {
 }
 */
 
+// The Java plugin adds Java compilation along with testing and bundling capabilities to a project
+apply plugin: 'java'
 // The Eclipse plugins generate files used by Eclipse,  making it possible to import project into Eclipse.
 //apply plugin: 'eclipse'
 //The Application plugin facilitates creating an executable JVM application.
@@ -75,8 +77,8 @@ jar {
 // end::jar[]
 
 // tag::dependencies[]
-sourceCompatibility = 1.8
-targetCompatibility = 1.8
+sourceCompatibility = 1.7
+targetCompatibility = 1.7
 
 // joda-time provides the time stamping used in HelloWorld.java
 // junit is to run the TestGreeter.java and others
@@ -100,6 +102,6 @@ test {
 }
 // end::dependencies[]
 
-wrapper {
+task wrapper(type: Wrapper) {
 	gradleVersion = '4.6'
 }
