@@ -16,19 +16,19 @@ public class TestWorker {
    @DisplayName("Worker Test")
    public void newtestZMWorkerPass()
    {
-     worker.eat(true);
-     worker.sick(true);
+     w.eat(true);
+     w.sick(true);
    }
    public void newtestZMWorkerFail()
    {
      try {
-       worker.eat(false);
+       w.eat(false);
        Assert.fail("should raise exception");
       } catch (Exception e) {
        //
      }
      try {
-       worker.sick(false);
+       w.sick(false);
        Assert.fail("should raise exception");
       } catch (Exception e) {
        //
