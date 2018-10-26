@@ -13,20 +13,19 @@ public class TestWorker {
    private  Worker w = new Worker();
 
    @Test
-   @DisplayName("Worker Test")
-   public void testWorker()
+   @DisplayName("Worker Pass Test")
+   public void testPassWorker()
    {
       assertEquals(w.eat(), true);
       assertEquals(w.sick(), true);
    }
 
-   // @Test
-   // @DisplayName("With Name Test")
-   // public void testWorkerWithName()
-   // {
-   //    w.setName("Corvus Glaive");
-   //    assertEquals(w.getName(),"Corvus Glaive");
-   //    assertEquals(w.work(),"Corvus Glaive is working very hard!");
-   // }
+   @Test
+   @DisplayName("Worker Fail Test")
+   public void testFailWorker()
+   {
+      assertEquals(w.eat(), false);
+      assertEquals(w.sick(), false);
+   }
 
 }
