@@ -13,24 +13,13 @@ public class TestWorker {
    private  Worker w = new Worker();
 
    @Test
-   @DisplayName("Worker Eat Pass Test")
+   @DisplayName("Worker Test")
    public void testWorkerEat()
    {
-      assertEquals(w.eat(), true);
-   }
-
-   @Test
-   @DisplayName("Worker Sick Fail Test")
-   public void testWorkerSick()
-   {
-      assertEquals(w.sick(), false);
-   }
-
-   @Test
-   @DisplayName("Worker Work Pass Test")
-   public void testWorkerWork()
-   {
-      assertEquals(w.work(), true);
+      fail("Testing if Worker Test fails")
+      assertTrue(w.eat());
+      assertTrue(w.sick());
+      assertTrue(w.work());
    }
 
 }
