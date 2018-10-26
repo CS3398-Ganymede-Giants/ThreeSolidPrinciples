@@ -19,5 +19,19 @@ public class TestWorker {
      assertEquals(w.eat(), true);
      assertEquals(w.sick(), true);
    }
-  
+   public void newtestZMWorkerFail()
+   {
+     try {
+       assertEquals(w.eat(), false);
+       Assert.fail("should raise exception");
+      } catch (Exception e) {
+       //
+     }
+     try {
+       assertEquals(w.sick(), false);
+       Assert.fail("should raise exception");
+      } catch (Exception e) {
+       //
+     }
+   }
 }
