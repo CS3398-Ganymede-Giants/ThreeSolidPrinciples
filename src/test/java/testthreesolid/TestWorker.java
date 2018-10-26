@@ -16,10 +16,10 @@ public class TestWorker {
    @DisplayName("Worker Test")
    public void testWorker()
    {
-      fail("Testing Worker Test fail");
-      assertTrue(w.eat());
-      assertTrue(w.sick());
-      assertTrue(w.work());
+      //fail("Worker Test fail condition");
+      assertEquals(w.eat(), true);
+      assertEquals(w.sick(), true);
+      assertEquals(w.work(), true);
    }
 
 }

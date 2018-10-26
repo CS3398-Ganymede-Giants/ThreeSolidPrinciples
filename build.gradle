@@ -70,10 +70,10 @@ dependencies {
 }
 
 test {
-    // useJUnitPlatform()
+    useJUnitPlatform()
 }
 // end::dependencies[]
 
-task wrapper(type: Wrapper) {
+wrapper {
 	gradleVersion = '4.10.2'
 }

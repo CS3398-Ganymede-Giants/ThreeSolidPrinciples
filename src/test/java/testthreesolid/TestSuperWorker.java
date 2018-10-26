@@ -16,10 +16,10 @@ public class TestSuperWorker {
    @DisplayName("SuperWorker Test")
    public void testSuperWorker()
    {
-      fail("Testing SuperWorker Test fail");
-      assertTrue(w.eat());
-      assertTrue(w.sick());
-      assertTrue(w.work());
+      //fail("Testing SuperWorker Test fail");
+      assertEquals(w.eat(), true);
+      assertEquals(w.sick(), true);
+      assertEquals(w.work(), true);
    }
 
 }
