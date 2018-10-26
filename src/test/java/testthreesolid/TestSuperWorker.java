@@ -13,24 +13,13 @@ public class TestSuperWorker {
    private  SuperWorker w = new SuperWorker();
 
    @Test
-   @DisplayName("SuperWorker Eat Pass Test")
-   public void testSuperWorkerEat()
+   @DisplayName("SuperWorker Test")
+   public void testSuperWorker()
    {
-      assertEquals(w.eat(), true);
-   }
-
-   @Test
-   @DisplayName("SuperWorker Sick Fail Test")
-   public void testSuperWorkerSick()
-   {
-      assertEquals(w.sick(), false);
-   }
-
-   @Test
-   @DisplayName("SuperWorker Work Pass Test")
-   public void testSuperWorkerWork()
-   {
-      assertEquals(w.work(), true);
+      fail("Testing SuperWorker Test fail");
+      assertTrue(w.eat());
+      assertTrue(w.sick());
+      assertTrue(w.work());
    }
 
 }

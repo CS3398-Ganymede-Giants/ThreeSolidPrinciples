@@ -14,9 +14,9 @@ public class TestWorker {
 
    @Test
    @DisplayName("Worker Test")
-   public void testWorkerEat()
+   public void testWorker()
    {
-      fail("Testing if Worker Test fails");
+      fail("Testing Worker Test fail");
       assertTrue(w.eat());
       assertTrue(w.sick());
       assertTrue(w.work());
