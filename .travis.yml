@@ -13,3 +13,6 @@ notifications:
       - "Repo `%{repository_slug}` *%{result}* build (<%{build_url}|#%{build_number}>) for commit (<%{compare_url}|%{commit}>) on branch `%{branch}`."
       - "Execution time: *%{duration}*"
       - "Message: %{message}"
+
+# language: java
+# script: gradle build
