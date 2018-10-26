@@ -70,7 +70,7 @@ dependencies {
 }
 
 test {
-    useJUnit()
+    useTestNG()
     testLogging {
 		    events "passed", "skipped", "failed"
 	  }
