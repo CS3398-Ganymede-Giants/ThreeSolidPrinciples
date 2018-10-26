@@ -31,9 +31,17 @@ dependencies {
 }
 */
 
+<<<<<<< HEAD
 // The Eclipse plugins generate files used by Eclipse,  making it possible to import project into Eclipse.
 //apply plugin: 'eclipse'
 //The Application plugin facilitates creating an executable JVM application.
+=======
+// The Java plugin adds Java compilation along with testing and bundling capabilities to a project
+apply plugin: 'java'
+// The Eclipse plugins generate files used by Eclipse,  making it possible to import project into Eclipse.
+apply plugin: 'eclipse'
+//The Application plugin facilitates creating an executable JVM application. 
+>>>>>>> master
 apply plugin: 'application'
 
 
@@ -47,11 +55,16 @@ sourceSets {
         resources { srcDir 'test' }
     }
 }
+<<<<<<< HEAD
 //
 //      Change this assignment to reflect your own project
 //      mainClassName = 'package.mainClassName'
 //
 //
+=======
+
+// mainClassName = 'package.mainClassName'
+>>>>>>> master
 mainClassName = 'threesolid.ThreeSolidMain'
 
 // tag::repositories[]
@@ -63,11 +76,14 @@ repositories {
 // end::repositories[]
 
 // tag::jar[]
+<<<<<<< HEAD
 //
 //
 //   Pick a baseName you like and assign it.
 //
 //
+=======
+>>>>>>> master
 jar {
     baseName = 'dl-three-solid-main'
     version =  '0.1.0'
@@ -75,8 +91,13 @@ jar {
 // end::jar[]
 
 // tag::dependencies[]
+<<<<<<< HEAD
 sourceCompatibility = 1.8
 targetCompatibility = 1.8
+=======
+sourceCompatibility = 1.7
+targetCompatibility = 1.7
+>>>>>>> master
 
 // joda-time provides the time stamping used in HelloWorld.java
 // junit is to run the TestGreeter.java and others
@@ -100,6 +121,14 @@ test {
 }
 // end::dependencies[]
 
+<<<<<<< HEAD
 wrapper {
 	gradleVersion = '4.10.2'
 }
+=======
+// tag::wrapper[]
+task wrapper(type: Wrapper) {
+    gradleVersion = '4.6'
+}
+// end::wrapper[]
+>>>>>>> master

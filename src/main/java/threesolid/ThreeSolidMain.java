@@ -4,6 +4,7 @@ import java.awt.*;        // Using AWT container and component classes
 import java.awt.event.*;  // Using AWT event classes and listener interfaces
 import java.io.*;
 
+<<<<<<< HEAD
 
 /*
 ThreeSolidMain.java
@@ -58,11 +59,30 @@ public class ThreeSolidMain
       {
          System.out.format("Starting ... \n");
       }
+=======
+//import threesolid.IWorker;
+
+
+public class ThreeSolidMain
+{   
+
+   public static Manager tsManager = new Manager();
+
+   // The entry main() method
+   public static void main(String[] args) 
+   {
+ 
+      try 
+      {
+         System.out.format("Starting ... \n");               
+      } 
+>>>>>>> master
       catch (Exception main_except)
       {
          main_except.printStackTrace();
       }
 
+<<<<<<< HEAD
       // Test all functions of class instances
       //BaseWorker
       System.out.format("BaseWorker:\n");
@@ -103,6 +123,12 @@ public class ThreeSolidMain
       {
          System.out.format("Stopping ... \n");
       }
+=======
+            try 
+      {
+         System.out.format("Stopping ... \n");               
+      } 
+>>>>>>> master
       catch (Exception main_except)
       {
          main_except.printStackTrace();
@@ -111,5 +137,78 @@ public class ThreeSolidMain
       System.exit(0);
 
    }
+<<<<<<< HEAD
 }
 
+=======
+ }
+
+// interface segregation principle - good example
+interface IWorker {
+	public String work();
+	public String eat();
+}   
+
+class Worker implements IWorker{
+	private String name = "";
+
+  	public String getName() 
+  	{
+    	return name;
+  	}
+
+  	public void setName(String name) 
+  	{
+      	this.name = name;
+  	}
+
+  	public String work() 
+  	{
+  		if (name == "") 
+    	{
+       		return "I'm working already!";
+    	}
+    	else 
+    	{
+       		return name + " is working very hard!";
+    	}
+	}
+
+	public String eat() 
+	{
+		if (name == "") 
+    	{
+       		return "I'm eating already!";
+    	}
+    	else 
+    	{
+    		return name + " is eating a double cheeseburger with special sauce and bacon flavored Skittles!";
+    	}
+	}
+}
+
+class SuperWorker implements IWorker{
+	public String work() {
+		return "I'm a super worker!";
+	}
+
+	public String eat() {
+		return "I'm eating a super healthy meal";
+	}
+}
+
+class Manager {
+	IWorker worker;
+
+	public void Manager() {
+
+	}
+	public void setWorker(IWorker w) {
+		worker=w;
+	}
+
+	public void manage() {
+		worker.work();
+	}
+}
+>>>>>>> master
