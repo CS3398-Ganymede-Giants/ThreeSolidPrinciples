@@ -96,10 +96,10 @@ dependencies {
 }
 
 test {
-    useJUnitPlatform()
+    //useJUnitPlatform()
 }
 // end::dependencies[]
 
 wrapper {
-	gradleVersion = '4.10'
+	gradleVersion = '4.6'
 }
