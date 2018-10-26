@@ -16,19 +16,22 @@ public class TestWorker {
    @DisplayName("Worker Test")
    public void newtestZMWorkerPass()
    {
-     assertTrue("\tWorker eat() ... \n", true);
-     assertTrue("Worker doesn't eat", false);
-
-     assertTrue("\tWorker sick() ... \n", true);
-     assertTrue("Worker isn't sick", false);
-
+     worker.eat(true);
+     worker.sick(true);
    }
    public void newtestZMWorkerFail()
    {
-     assertFalse("\tWorker eat() ... \n", true);
-     assertFalse("Worker doesn't eat", false);
-
-     assertFalse("\tWorker sick() ... \n", true);
-     assertFalse("Worker isn't sick", false);
+     try {
+       worker.eat(false);
+       Assert.fail("should raise exception");
+      } catch (Exception e) {
+       //
+     }
+     try {
+       worker.sick(false);
+       Assert.fail("should raise exception");
+      } catch (Exception e) {
+       //
+     }
    }
 }
