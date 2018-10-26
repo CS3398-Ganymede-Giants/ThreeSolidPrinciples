@@ -1,8 +1,7 @@
 language: java
-install: true
 jdk: oraclejdk8
 # script: ant main
-script: ./gradlew build
+script: gradle check
 notifications:
   email: false
   slack:
