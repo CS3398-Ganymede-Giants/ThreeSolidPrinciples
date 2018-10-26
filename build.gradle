@@ -9,41 +9,9 @@
 
 // Apply the java plugin to add support for Java
 apply plugin: 'java'
-<<<<<<< HEAD
-
-// In this section you declare where to find the dependencies of your project
-repositories {
-    // Use 'jcenter' for resolving your dependencies.
-    // You can declare any Maven/Ivy/file repository here.
-    jcenter()
-}
-
-// In this section you declare the dependencies for your production and test code
-dependencies {
-    // The production code uses the SLF4J logging API at compile time
-    compile 'org.slf4j:slf4j-api:1.7.12'
-
-    // Declare the dependency for your favourite test framework you want to use in your tests.
-    // TestNG is also supported by the Gradle Test task. Just change the
-    // testCompile dependency to testCompile 'org.testng:testng:6.8.1' and add
-    // 'test.useTestNG()' to your build script.
-    testCompile 'junit:junit:4.12'
-}
-*/
-
-<<<<<<< HEAD
-=======
->>>>>>> 952e6e9b00a96fcf24ded91e7c72b206417ceb9c
 // The Eclipse plugins generate files used by Eclipse,  making it possible to import project into Eclipse.
 //apply plugin: 'eclipse'
 //The Application plugin facilitates creating an executable JVM application.
-=======
-// The Java plugin adds Java compilation along with testing and bundling capabilities to a project
-apply plugin: 'java'
-// The Eclipse plugins generate files used by Eclipse,  making it possible to import project into Eclipse.
-apply plugin: 'eclipse'
-//The Application plugin facilitates creating an executable JVM application. 
->>>>>>> master
 apply plugin: 'application'
 
 
@@ -57,20 +25,7 @@ sourceSets {
         resources { srcDir 'test' }
     }
 }
-<<<<<<< HEAD
-<<<<<<< HEAD
-//
-//      Change this assignment to reflect your own project
-//      mainClassName = 'package.mainClassName'
-//
-//
-=======
 
-// mainClassName = 'package.mainClassName'
->>>>>>> master
-=======
-
->>>>>>> 952e6e9b00a96fcf24ded91e7c72b206417ceb9c
 mainClassName = 'threesolid.ThreeSolidMain'
 
 // tag::repositories[]
@@ -82,14 +37,11 @@ repositories {
 // end::repositories[]
 
 // tag::jar[]
-<<<<<<< HEAD
 //
 //
 //   Pick a baseName you like and assign it.
 //
 //
-=======
->>>>>>> master
 jar {
     baseName = 'dl-three-solid-main'
     version =  '0.1.0'
@@ -97,13 +49,8 @@ jar {
 // end::jar[]
 
 // tag::dependencies[]
-<<<<<<< HEAD
 sourceCompatibility = 1.8
 targetCompatibility = 1.8
-=======
-sourceCompatibility = 1.7
-targetCompatibility = 1.7
->>>>>>> master
 
 // joda-time provides the time stamping used in HelloWorld.java
 // junit is to run the TestGreeter.java and others
@@ -127,18 +74,6 @@ test {
 }
 // end::dependencies[]
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-wrapper {
-=======
 task wrapper(type: Wrapper) {
->>>>>>> 952e6e9b00a96fcf24ded91e7c72b206417ceb9c
 	gradleVersion = '4.10.2'
 }
-=======
-// tag::wrapper[]
-task wrapper(type: Wrapper) {
-    gradleVersion = '4.6'
-}
-// end::wrapper[]
->>>>>>> master

@@ -15,9 +15,5 @@ include 'shared'
 include 'api'
 include 'services:webservice'
 */
-<<<<<<< HEAD
 /******  Change the rootProject.name to the package name you are using ******/
-=======
-
->>>>>>> master
 rootProject.name = 'ThreeSolidMain'
