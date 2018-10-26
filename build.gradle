@@ -70,20 +70,20 @@ dependencies {
 }
 
 test {
-    useTestNG()
+    useJUnitPlatform()
     testLogging {
 		    events "passed", "skipped", "failed"
 	  }
 }
 // end::dependencies[]
 
+/*
 task wrapper(type: Wrapper) {
 	gradleVersion = '4.10.2'
 }
+*/
 
-/*
 wrapper {
 	gradleVersion = '4.10.2'
   distributionType = Wrapper.DistributionType.ALL
 }
-*/
