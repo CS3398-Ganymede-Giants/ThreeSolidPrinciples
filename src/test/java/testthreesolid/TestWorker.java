@@ -14,12 +14,21 @@ public class TestWorker {
 
    @Test
    @DisplayName("Worker Test")
-   public void testWorker()
+   public void newtestZMWorkerPass()
    {
-      fail("Testing Worker Test fail");
-      assertTrue(w.eat());
-      assertTrue(w.sick());
-      assertTrue(w.work());
-   }
+     assertTrue("\tWorker eat() ... \n", true);
+     assertTrue("Worker doesn't eat", false);
 
+     assertTrue("\tWorker sick() ... \n", true);
+     assertTrue("Worker isn't sick", false);
+
+   }
+   public void newtestZMWorkerFail()
+   {
+     assertFalse("\tWorker eat() ... \n", true);
+     assertFalse("Worker doesn't eat", false);
+
+     assertFalse("\tWorker sick() ... \n", true);
+     assertFalse("Worker isn't sick", false);
+   }
 }
