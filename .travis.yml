@@ -1,10 +1,9 @@
 language: java
 install:
-  - ./gradlew --version # Display Gradle, Groovy, JVM and other versions
+  - ./gradle --version # Display Gradle, Groovy, JVM and other versions
 jdk: oraclejdk8
 # script: ant main
-# script: gradle build
-script: gradlew --scan --warning-mode=all build
+script: gradle build
 notifications:
   email: false
   slack:
