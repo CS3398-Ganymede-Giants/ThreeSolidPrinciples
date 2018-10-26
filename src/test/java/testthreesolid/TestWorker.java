@@ -1,5 +1,13 @@
 package threesolid;
 
+<<<<<<< HEAD
+import org.junit.jupiter.api.BeforeAll;
+
+
+import static org.junit.jupiter.api.Assertions.*;
+import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Test;
+=======
 import static org.junit.jupiter.api.Assertions.*;
 
 
@@ -11,11 +19,32 @@ import org.junit.jupiter.api.RepeatedTest;
 import org.junit.jupiter.api.TestInstance;
 import org.junit.jupiter.api.extension.ExtendWith;
 
+>>>>>>> master
 
 
 public class TestWorker {
 
    private  Worker w = new Worker();
+<<<<<<< HEAD
+
+   @Test
+   @DisplayName("Worker Pass Test")
+   public void testPassWorker()
+   {
+      assertEquals(w.eat(), true);
+      assertEquals(w.sick(), true);
+   }
+
+   @Test
+   @DisplayName("Worker Fail Test")
+   public void testFailWorker()
+   {
+      assertEquals(w.eat(), false);
+      assertEquals(w.sick(), false);
+   }
+
+}
+=======
 	
    @Test
    public void testWorkerWithNoName()
@@ -33,3 +62,4 @@ public class TestWorker {
    }
 
 }
+>>>>>>> master
