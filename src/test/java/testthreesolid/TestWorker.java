@@ -22,4 +22,17 @@ public class TestWorker {
       assertEquals(w.work(), true);
    }
 
+   @Test
+   @DisplayName("Worker Fail Test")
+   public void testFailWorker()
+   {
+       try{
+           assertEquals(w.eat(), false);
+           fail("Worker did not return false");
+       }
+       catch (org.opentest4j.AssertionFailedError e) {
+           System.out.format("\tWorker Fail  ... \n");
+       }
+   }
+
 }
