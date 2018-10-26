@@ -14,7 +14,7 @@ public class TestSuperWorker {
 
    @Test
    @DisplayName("SuperWorker Pass Test")
-   public void testSuperWorker()
+   public void testPassSuperWorker()
    {
       assertEquals(w.eat(), true);
       assertEquals(w.sick(), true);
@@ -23,7 +23,7 @@ public class TestSuperWorker {
 
    @Test
    @DisplayName("SuperWorker Fail Test")
-   public void testSuperWorker()
+   public void testFailSuperWorker()
    {
       assertEquals(w.eat(), false);
       assertEquals(w.sick(), false);
