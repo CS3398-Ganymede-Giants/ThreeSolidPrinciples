@@ -13,10 +13,13 @@ import org.junit.jupiter.api.extension.ExtendWith;
 
 
 public class TestBaseWorker {
+	
+	   private  BaseWorker bw = new BaseWorker();
+   @Test	
+   @DisplayName("BaseWorker Test")
 
-@Test
 	public void testBaseWorkerwork() {
-	    assertEquals(w.work(),"\tIn BaseWorker work method ... \n");
+	    assertEquals(bw.work(),"\tIn BaseWorker work method ... \n");
 	}
 
 }
