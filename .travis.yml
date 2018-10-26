@@ -1,9 +1,8 @@
 language: java
-install:
-  - gradle --version # Display Gradle, Groovy, JVM and other versions
+install: true
 jdk: oraclejdk8
 # script: ant main
-script: gradle build
+script: ./gradlew build
 notifications:
   email: false
   slack:
