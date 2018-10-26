@@ -1,14 +1,15 @@
 language: java
 jdk: oraclejdk8
 # script: ant main
-script: gradle build
+before_install: chmod +x gradlew
+script: ./gradlew check
 notifications:
   email: false
   slack:
     rooms:
       - secure: isMDHGOA6O4pelPFcQvmBqKWeEqy2Yr7Zz4VOjw1SHP9wXBFWAEFUB+P1f+FJz1yzqY0cqRPlbHHfA2Qj1wSVqM9WE0vW8GFwhEFL6gofWoIDZWdmoxJnC5EYJFcI4bxPFclbNfpexfsOprsX4rFzU6dJtsIdsKARDdD0FWwokuG92MXs5svcRiK3+x/5BMyzC2b38KaHiUDBoexqr3UXD4ob7PeVx1gVX5hfCldqVnzonJcDWT7Aevs591tWIrdpLtFGGP5DN0SW54qPEJEwJ3orxheZgFo1d3PknCiWIWpCwAKWsFvVEpkruPzuaybxmV0SLweS7EuYGTuHd2Q2+wXa1slSTcQqY04VxZHUpANeE/UUguNw1dsnrhNcUd/NEhla68WZ5HA5FTRNW4zBxYawj7Q9wbLUx9DAi6z50NUSLlKb2DwoTgclklNQvPNiTuXGc2Jz+ntDIloF2lJ7J43IPJF2n/ulBW/4IaCjTqb7Uoa94tUnSpV49uQq/CaBC9ZO6VsNBy9Zh2MULAuqx5hOtsnamCoJb/el1FI0h9+HC6dB8bcynSLGPTmOcbW39d+mbljhlDAIMU33c/JKcGiAfBeWIuM96ywAEoAPzTpeSDLuJtyoEzrQq6uZGchdMk6ZIw9ZIb9iYCJS8fl6uiy/d84l69C2cujpkXOTX4=
-    on_success: always
-    on_failure: always
+    on_success: change
+    on_failure: change
     template:
       - "Repo `%{repository_slug}` *%{result}* build (<%{build_url}|#%{build_number}>) for commit (<%{compare_url}|%{commit}>) on branch `%{branch}`."
       - "Execution time: *%{duration}*"
