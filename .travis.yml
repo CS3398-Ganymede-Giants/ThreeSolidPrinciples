@@ -1,8 +1,8 @@
 language: java
 jdk: oraclejdk8
 # script: ant main
-before_script: chmod +x gradlew
-script: gradlew check
+# before_install: gradle wrapper
+script: gradle check
 notifications:
   email: false
   slack:
