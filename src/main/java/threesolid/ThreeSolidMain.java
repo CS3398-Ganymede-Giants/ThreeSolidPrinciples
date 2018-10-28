@@ -34,14 +34,14 @@ Not Used:
 
 public class ThreeSolidMain
 {
-  
+
     //Class Instantiations
     //Worker
     public static BaseWorker testBaseWorker = new BaseWorker();
     public static Worker testWorker = new Worker();
     public static SuperWorker testSuperWorker = new SuperWorker();
     public static TempWorker testTempWorker = new TempWorker();
-    //Manager 
+    //Manager
     public static Manager testManager = new Manager();
     public static ProjectManager testProjectManager = new ProjectManager();
     public static ProductManager testProductManager = new ProductManager();
@@ -112,4 +112,3 @@ public class ThreeSolidMain
 
    }
 }
-

@@ -16,17 +16,23 @@ public class TestWorker {
    @DisplayName("Worker Test")
    public void testWorker()
    {
+      //fail("Worker Test fail condition");
       assertEquals(w.eat(), true);
       assertEquals(w.sick(), true);
+      assertEquals(w.work(), true);
    }
 
-   // @Test
-   // @DisplayName("With Name Test")
-   // public void testWorkerWithName()
-   // {
-   //    w.setName("Corvus Glaive");
-   //    assertEquals(w.getName(),"Corvus Glaive");
-   //    assertEquals(w.work(),"Corvus Glaive is working very hard!");
-   // }
+   @Test
+   @DisplayName("Worker Fail Test")
+   public void testFailWorker()
+   {
+       try{
+           assertEquals(w.eat(), false);
+           fail("Worker did not return false");
+       }
+       catch (org.opentest4j.AssertionFailedError e) {
+           System.out.format("\tWorker Fail  ... \n");
+       }
+   }
 
 }

@@ -9,7 +9,7 @@
         <javac srcdir="src" destdir="build/classes"/>
     </target>
 
-    <target name="jar">
+    <target name="jar" depends="compile">
         <mkdir dir="build/jar"/>
         <jar destfile="build/jar/ThreeSolidMain.jar" basedir="build/classes">
             <manifest>
@@ -18,8 +18,11 @@
         </jar>
     </target>
 
-    <target name="run">
+    <target name="run" depends="jar">
         <java jar="build/jar/ThreeSolidMain.jar" fork="true"/>
     </target>
+
+    <target name="main" depends="clean,run"/>
+    <target name="clean-build" depends="clean,jar"/>
 
 </project>
