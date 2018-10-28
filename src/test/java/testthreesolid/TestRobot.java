@@ -27,7 +27,7 @@ public class TestRobot {
    public void testFailRobot()
    {
        try{
-           assertEquals(r.eat(), false);
+           assertEquals(r.reboot(), false);
            fail("Robot did not return false");
        }
        catch (org.opentest4j.AssertionFailedError e) {
