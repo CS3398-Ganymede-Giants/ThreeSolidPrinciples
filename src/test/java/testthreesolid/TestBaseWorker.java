@@ -22,7 +22,7 @@ public class TestBaseWorker {
    public void testFailSuperWorker()
    {
        try{
-           assertEquals(w.work(), false);
+           assertEquals(bw.work(), false);
            fail("BaseWorker did not return false");
        }
        catch (org.opentest4j.AssertionFailedError e) {
