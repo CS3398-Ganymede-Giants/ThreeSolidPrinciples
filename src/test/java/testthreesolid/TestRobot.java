@@ -8,30 +8,30 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 
-public class TestTempWorker {
+public class TestRobot {
 
-   private  TempWorker tW = new TempWorker();
+   private  Robot r = new Robot();
 
    @Test
-   @DisplayName("TempWorker Test")
-   public void testTempWorker()
+   @DisplayName("Robot Test")
+   public void testRobot()
    {
       //fail("Worker Test fail condition");
-      assertEquals(tW.eat(), true);
-      assertEquals(tW.sick(), true);
-      assertEquals(tW.work(), true);
+      assertEquals(r.reboot(), true);
+    //   assertEquals(w.sick(), true);
+    //   assertEquals(w.work(), true);
    }
 
    @Test
-   @DisplayName("TempWorker Fail Test")
-   public void testFailTempWorker()
+   @DisplayName("Robot Fail Test")
+   public void testFailRobot()
    {
        try{
-           assertEquals(w.eat(), false);
-           fail("TempWorker did not return false");
+           assertEquals(r.eat(), false);
+           fail("Robot did not return false");
        }
        catch (org.opentest4j.AssertionFailedError e) {
-           System.out.format("\tTempWorker Fail  ... \n");
+           System.out.format("\tRobot Fail  ... \n");
        }
    }
 

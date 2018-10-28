@@ -20,7 +20,7 @@
 *.rar
 
 # Do not store build/ directory or subdirs
-# .gradle
+.gradle
 build/
 
 # Ignore Gradle GUI config
