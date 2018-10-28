@@ -27,7 +27,7 @@ public class TestTempWorker {
    public void testFailTempWorker()
    {
        try{
-           assertEquals(w.eat(), false);
+           assertEquals(tW.eat(), false);
            fail("TempWorker did not return false");
        }
        catch (org.opentest4j.AssertionFailedError e) {
