@@ -14,7 +14,7 @@ public class TestBaseWorker {
    @DisplayName("TestBaseWorker")
 
 	public void testBaseWorkerwork() {
-	    assertEquals(bw.work(),"\tIn BaseWorker work method ... \n");
+	    assertEquals(bw.work(), true);
 	}
 
    @Test
@@ -26,7 +26,7 @@ public class TestBaseWorker {
            fail("BaseWorker did not return false");
        }
        catch (org.opentest4j.AssertionFailedError e) {
-           System.out.format("\BaseWorker Fail  ... \n");
+           System.out.format("\tBaseWorker Fail  ... \n");
        }
    }
 
