@@ -17,7 +17,7 @@ public class Manager{
       assertEquals(m.manage(),true);
     }
 
-    @Test
+    /*@Test
     @DisplayName("Manager Fail Test")
     public void testFailManager(){
       try{
@@ -27,6 +27,6 @@ public class Manager{
       catch (org.opentest4j.AssertionFailedError e) {
           System.out.format("\tManager Fail  ... \n");
       }
-   }
+   }*/
 
 }
