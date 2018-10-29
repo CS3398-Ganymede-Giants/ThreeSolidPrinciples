@@ -28,3 +28,13 @@ Run program
 ```shell
 $ ant run
 ```
+
+### Gradle Build Instructions
+Clean and build
+```shell
+$ gradle clean build
+```
+Check
+```shell
+$ gradle check --warning-mode=all
+```

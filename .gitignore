@@ -12,13 +12,17 @@
 
 # Package Files #
 # *.jar
-*.war 
+*.war
 *.nar
-#fixed
-*.ear 
+*.ear
 *.zip
 *.tar.gz
 *.rar
+
+# Eclipse IDE
+.project
+.classpath
+.settings/
 
 # Do not store build/ directory or subdirs
 .gradle
